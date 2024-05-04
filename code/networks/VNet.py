@@ -578,7 +578,7 @@ class VNet(nn.Module):
         out_seg = self.decoder(features)
         return out_seg
 
-class ACNet3d_V2(nn.Module):
+class DACNet3d_V2(nn.Module):
     def __init__(self, n_channels=3, n_classes=2, n_filters=16, normalization='none', has_dropout=False,
                  has_residual=False):
         super(ACNet3d_V2, self).__init__()
