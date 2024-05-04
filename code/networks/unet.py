@@ -370,7 +370,7 @@ class UNet(nn.Module):
         output1 = self.decoder1(feature)
         return output1
  
-class ACNet2d_v2(nn.Module):
+class DACNet2d_v2(nn.Module):
     def __init__(self, in_chns, class_num):
         super(ACNet2d_v2, self).__init__()
 
@@ -404,7 +404,7 @@ class ACNet2d_v2(nn.Module):
         output3 = self.decoder3(feature)
         return output1, output2, output3
         
-class ACNet2d_v3(nn.Module):
+class DACNet2d_v3(nn.Module):
     def __init__(self, in_chns, class_num):
         super(ACNet2d_v3, self).__init__()
 
