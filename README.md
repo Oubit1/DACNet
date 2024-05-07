@@ -8,7 +8,7 @@ This repository is based on Pytorch 1.9.1, CUDA11.1 and Python 3.6.5
 ### Install
 Clone the repo:
 ```shell
-git clone https://github.com/Cuthbert-Huang/CC-Net.git 
+git clone https://github.com/Oubit1/DACNet.git 
 ```
 ### Dataset
 We use [the dataset of 2018 Atrial Segmentation Challenge](http://atriaseg2018.cardiacatlas.org/).
