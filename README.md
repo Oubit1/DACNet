@@ -20,7 +20,8 @@ If you want to process .nrrd data into .h5 data, you can use `code/dataloaders/p
 Our code is origin from [score-MRI](https://github.com/HJ-harry/score-MRI)
 Follow the class and function definitions involved in this code[inverse_problem_solver_ACDC_2d.py] can be found under that link.
 ### Pretrained models
-The pretrained models were provided in (https://pan.quark.cn/s/a0cbd42de20f)password：DDsn.
+The pretrained models were provided in (https://pan.quark.cn/s/7821f1646ea8
+提取码：1eef）
 ### Train
 python ./code/train_DACNet_3d.py --dataset_name LA --model acnet3d_v2 --exp DACNet --labelnum 8 --gpu 0 --temperature 0.1 --max_iteration 16000
 python ./code/train_DACNet_2d.py --dataset_name ACDC --model acnet2d_v3 --exp DACNet --labelnum 14 --gpu 0 --temperature 0.1 --max_iteration 30000
