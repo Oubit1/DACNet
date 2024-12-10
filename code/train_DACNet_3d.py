@@ -156,8 +156,8 @@ if __name__ == "__main__":
 
             volume_batch, label_batch = sampled_batch['image'], sampled_batch['label']
             volume_batch, label_batch = volume_batch.cuda(), label_batch.cuda()
-            img_a, img_b = volume_batch[:1], volume_batch[1:2]
-            lab_a, lab_b = label_batch[:1], label_batch[1:2]
+            img_a, img_b = volume_batch[:sub_bs], volume_batch[sub_bs:labeled_bs]
+            lab_a, lab_b = label_batch[:sub_bs], label_batch[sub_bs:labeled_bs]
             with torch.no_grad():
                 img_mask, loss_mask = context_mask(img_a, args.mask_ratio)
 
