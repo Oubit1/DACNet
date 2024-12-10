@@ -126,8 +126,8 @@ def train(args, snapshot_path):
             
             volume_batch, label_batch = sampled_batch['image'], sampled_batch['label']
             volume_batch, label_batch = volume_batch.cuda(), label_batch.cuda()
-            img_a, img_b = volume_batch[:sub_bs], volume_batch[sub_bs:label_bs]
-            lab_a, lab_b = label_batch[:sub_bs], label_batch[sub_bs:label_bs]
+            img_a, img_b = volume_batch[:sub_bs], volume_batch[sub_bs:labeled_bs]
+            lab_a, lab_b = label_batch[:sub_bs], label_batch[sub_bs:labeled_bs]
             with torch.no_grad():
                 img_mask, loss_mask = context_mask_2D(img_a, args.mask_ratio)
             """Mix Input"""
